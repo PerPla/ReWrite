@@ -1,0 +1,67 @@
+<br><br>
+<mat-card id="main-card">
+  <h1>Ajustes</h1>
+  <p>Puedes cambiar todo lo de tu usuario.
+  <p>Cambia lo que quieras:
+</mat-card>
+<br><br>
+<mat-card id="main-card">
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Usuario
+        </mat-panel-title>
+        <mat-panel-description>
+          Cambia tu usuario y nombre:
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <form class="example-form">
+        <mat-form-field hintLabel="Max 10 characters">
+          <input matInput #input maxlength="10" placeholder="Ingrese su nuevo usuario">
+          <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint>
+        </mat-form-field>
+        <button mat-raised-button id="main-button">Estoy Seguro</button>
+      </form>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Contraseña
+        </mat-panel-title>
+        <mat-panel-description>
+          Cambia tu contraseña:
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <form class="example-form">
+        <input matInput placeholder="Pon tu contraseña" [type]="hide ? 'password' : 'text'">
+        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        <input matInput placeholder="Ingresa tu nueva contraseña" [type]="hide ? 'password' : 'text'">
+        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        <input matInput placeholder="Confirma tu contraseña" [type]="hide ? 'password' : 'text'">
+        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        <button mat-raised-button id="main-button">Estoy Seguro</button>
+      </form>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Imagen
+        </mat-panel-title>
+        <mat-panel-description>
+          Esto se va a modificar
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <textarea matInput placeholder="Imagen"></textarea>
+        </mat-form-field>
+        <button mat-raised-button id="main-button">Estoy Seguro</button>
+      </form>
+    </mat-expansion-panel>
+  </mat-accordion>
+</mat-card>
