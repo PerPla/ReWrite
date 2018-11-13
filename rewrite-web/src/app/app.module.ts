@@ -1,27 +1,27 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { HomeComponent } from './home/home.component';
-import { RegistroComponent } from './registro/registro.component';
-import { ArticuloComponent } from './articulo/articulo.component';
-import { EnsayoComponent } from './ensayo/ensayo.component';
-import { ResumenComponent } from './resumen/resumen.component';
-import { NarrativoComponent } from './narrativo/narrativo.component';
-import { LiricoComponent } from './lirico/lirico.component';
-import { DramaticoComponent } from './dramatico/dramatico.component';
-import { CrearComponent } from './crear/crear.component';
-import { EvolucionComponent } from './evolucion/evolucion.component';
 import { AjustesComponent } from './ajustes/ajustes.component';
-import { MisObrasComponent } from './mis-obras/mis-obras.component';
+import { AppComponent } from './app.component';
+import { ArticuloComponent } from './articulo/articulo.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { CrearComponent } from './crear/crear.component';
+import { DramaticoComponent } from './dramatico/dramatico.component';
+import { EnsayoComponent } from './ensayo/ensayo.component';
+import { EvolucionComponent } from './evolucion/evolucion.component';
+import { HomeComponent } from './home/home.component';
+import {InitComponent} from './init.component';
 import { LienzoComponent } from './lienzo/lienzo.component';
+import { LiricoComponent } from './lirico/lirico.component';
+import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
+import { MisObrasComponent } from './mis-obras/mis-obras.component';
+import { NarrativoComponent } from './narrativo/narrativo.component';
+import { NgModule } from '@angular/core';
+import { RegistroComponent } from './registro/registro.component';
+import { ResumenComponent } from './resumen/resumen.component';
 import {Routes, RouterModule} from '@angular/router';
 
-
-// Importamos Angulas Material Animation
+// Importamos Angular Material Animation
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 // Material
 import { MaterialModule} from './material';
 
@@ -60,16 +60,16 @@ const appRoutes: Routes = [
     AjustesComponent,
     MisObrasComponent,
     LienzoComponent,
-    MenuComponent
+    MenuComponent,
+    InitComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
     MaterialModule,
-    AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [InitComponent]
 })
 export class AppModule { }

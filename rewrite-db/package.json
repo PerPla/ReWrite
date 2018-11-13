@@ -1,0 +1,29 @@
+{
+  "name": "rewrite-db",
+  "version": "1.0.0",
+  "description": "<aquivaladescripciondetucosa>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "set DEBUG=rewrite:* & node setup.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PerPla/ReWrite.git"
+  },
+  "author": "Julian Alcibar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PerPla/ReWrite/issues"
+  },
+  "homepage": "https://github.com/PerPla/ReWrite#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.2",
+    "chalk": "^2.4.1",
+    "debug": "^4.1.0",
+    "inquirer": "^6.2.0",
+    "minimist": "^1.2.0",
+    "mysql2": "^1.6.4",
+    "sequelize": "^4.41.2"
+  }
+}
