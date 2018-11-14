@@ -18,8 +18,19 @@ module.exports = async function (config) {
     const ModeloTipo = setupModeloTipo(config)
     const ModeloUsuario = setupModeloUsuario(config)
 
-    ModeloEstrofa.hasMany(ModeloTipo, { as: 'tipos' })
-    ModeloTipo.belongsTo(ModeloEstrofa)
+
+    ModeloEstrofa.hasMany(ModeloTipo,
+        {
+            foreignKey: 'estrofaId',
+            constraints: false,
+        })
+
+    ModeloTipo.belongsTo(ModeloEstrofa,
+        {
+            foreignKey: 'estrofaId',
+            constraits: false,
+            as: 'estrofa'
+        })
 
 
     ModeloUsuario.bulkCreate([
@@ -27,6 +38,17 @@ module.exports = async function (config) {
         {usuario: 'Cabezon', contrasena: 'megustanlosmemes', avatar: 'xvideos.com'}
     ])
 
+    ModeloEstrofa.bulkCreate([
+        {versos: 'VERSOS1'},
+        {versos: 'VERSOS2'},
+        {versos: 'VERSOS3'}
+    ])
+
+    ModeloTipo.bulkCreate([
+        {nombre: 'Nombre1', numeroVersos: 1, rima: 1, estrofaId: 1},
+        {nombre: 'Nombre2', numeroVersos: 2, rima: 2, estrofaId: 1},
+        {nombre: 'Nombre3', numeroVersos: 3, rima: 3, estrofaId: 2}
+    ])
 
     await sequelize.authenticate()
 
