@@ -6,7 +6,7 @@ const setupDatabase = require('../lib/db')
 module.exports = function setupModeloTipo (config) {
     const sequelize =  setupDatabase(config)
 
-    return sequelize.define('tipo', {
+    return sequelize.define('cat_tipo', {
         id: {
             type: Sequelize.INTEGER,
             primaryKey: true,
