@@ -2,134 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="951259b6-b9df-480d-9da8-3f28db54d3eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rewrite-api/api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rewrite-api/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rewrite-api/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rewrite-db/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rewrite-db/lib/db.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rewrite-db/lib/estrofa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rewrite-db/lib/obra.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rewrite-db/lib/tipo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rewrite-db/lib/usuario.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rewrite-db/models/estrofa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rewrite-db/models/obra.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rewrite-db/models/tipo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rewrite-db/models/usuario.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rewrite-db/setup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/protractor.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/app.e2e-spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/app.po.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/tsconfig.e2e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReWrite.webarchive" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ajustes/ajustes.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ajustes/ajustes.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ajustes/ajustes.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ajustes/ajustes.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/articulo/articulo.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/articulo/articulo.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/articulo/articulo.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/articulo/articulo.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/crear/crear.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/crear/crear.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/crear/crear.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/crear/crear.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/dramatico/dramatico.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/dramatico/dramatico.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/dramatico/dramatico.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/dramatico/dramatico.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ensayo/ensayo.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ensayo/ensayo.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ensayo/ensayo.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ensayo/ensayo.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/evolucion/evolucion.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/evolucion/evolucion.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/evolucion/evolucion.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/evolucion/evolucion.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/home/home.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/home/home.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/home/home.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/home/home.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/interfaces/usuario.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lienzo/lienzo.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lienzo/lienzo.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lienzo/lienzo.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lienzo/lienzo.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lirico/lirico.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lirico/lirico.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lirico/lirico.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lirico/lirico.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/login/login.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/login/login.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/login/login.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/login/login.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/material.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/menu/menu.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/menu/menu.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/menu/menu.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/menu/menu.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/mis-obras/mis-obras.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/mis-obras/mis-obras.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/mis-obras/mis-obras.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/mis-obras/mis-obras.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/narrativo/narrativo.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/narrativo/narrativo.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/narrativo/narrativo.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/narrativo/narrativo.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/registro/registro.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/registro/registro.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/registro/registro.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/registro/registro.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/resumen/resumen.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/resumen/resumen.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/resumen/resumen.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/resumen/resumen.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/back.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/fondo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/fondo2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/fondo3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/fondo4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/lienzo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/logo2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/logo3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/logoT.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/plantilla.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/trama.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/trama2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/browserslist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/environments/environment.prod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/environments/environment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/polyfills.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tslint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tslint.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/rewrite-db/lib/actos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rewrite-db/lib/articulo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rewrite-db/lib/dialogo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rewrite-db/lib/dramatico.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rewrite-db/lib/ensayo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rewrite-db/lib/lirico.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rewrite-db/lib/narrativo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rewrite-db/lib/personaje.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rewrite-db/lib/resumen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rewrite-db/models/actos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rewrite-db/models/articulo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rewrite-db/models/dialogo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rewrite-db/models/dramatico.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rewrite-db/models/ensayo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rewrite-db/models/lirico.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rewrite-db/models/narrativo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rewrite-db/models/personaje.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rewrite-db/models/resumen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rewrite-web/src/app/material.ts" beforeDir="false" afterPath="$PROJECT_DIR$/rewrite-web/src/app/material.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rewrite-web/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/rewrite-web/src/main.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -174,93 +73,95 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rewrite-api/api.js">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ensayo.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rewrite-db/models/ensayo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-828">
-              <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+            <state relative-caret-position="375">
+              <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="ensayo.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rewrite-db/lib/ensayo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="init.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rewrite-web/src/app/init.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rewrite-web/src/app/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="12" selection-start-column="12" selection-end-column="12" />
+              <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rewrite-db/models/usuario.js">
+      <file leaf-file-name="material.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rewrite-web/src/app/material.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="195">
+              <caret line="13" column="163" selection-start-line="13" selection-start-column="163" selection-end-line="13" selection-end-column="163" />
+              <folding>
+                <element signature="e#0#69#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rewrite-db/index.js">
+      <file leaf-file-name="ajustes.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rewrite-web/src/app/ajustes/ajustes.component.ts">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="ajustes.component.spec.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rewrite-web/src/app/ajustes/ajustes.component.spec.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+            <state relative-caret-position="45">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="4" />
+              <folding>
+                <element signature="e#0#73#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rewrite-db/models/estrofa.js">
+      <file leaf-file-name="dramatico.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rewrite-db/lib/dramatico.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="36" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="36" />
+            <state>
+              <caret selection-end-line="22" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rewrite-db/models/obra.js">
+      <file leaf-file-name="actos.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rewrite-db/lib/actos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="21" column="9" selection-end-line="23" selection-end-column="1" />
+            <state relative-caret-position="270">
+              <caret line="18" column="15" lean-forward="true" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rewrite-db/models/tipo.js">
+      <file leaf-file-name="db.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rewrite-db/lib/db.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="41" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rewrite-db/lib/estrofa.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rewrite-api/config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rewrite-db/setup.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="536">
-              <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
+            <state relative-caret-position="135">
+              <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -301,6 +202,27 @@
         <option value="$PROJECT_DIR$/rewrite-api/api.js" />
         <option value="$PROJECT_DIR$/rewrite-db/index.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/rewrite-web/src/app/ajustes/ajustes.component.html" />
+        <option value="$PROJECT_DIR$/rewrite-web/src/app/material.ts" />
+        <option value="$PROJECT_DIR$/rewrite-web/src/main.ts" />
+        <option value="$PROJECT_DIR$/rewrite-db/models/narrativo.js" />
+        <option value="$PROJECT_DIR$/rewrite-db/lib/narrativo.js" />
+        <option value="$PROJECT_DIR$/rewrite-db/models/personaje.js" />
+        <option value="$PROJECT_DIR$/rewrite-db/lib/personaje.js" />
+        <option value="$PROJECT_DIR$/rewrite-db/lib/dialogo.js" />
+        <option value="$PROJECT_DIR$/rewrite-db/models/dialogo.js" />
+        <option value="$PROJECT_DIR$/rewrite-db/models/actos.js" />
+        <option value="$PROJECT_DIR$/rewrite-db/lib/actos.js" />
+        <option value="$PROJECT_DIR$/rewrite-db/models/dramatico.js" />
+        <option value="$PROJECT_DIR$/rewrite-db/lib/dramatico.js" />
+        <option value="$PROJECT_DIR$/rewrite-db/models/lirico.js" />
+        <option value="$PROJECT_DIR$/rewrite-db/lib/lirico.js" />
+        <option value="$PROJECT_DIR$/rewrite-db/lib/resumen.js" />
+        <option value="$PROJECT_DIR$/rewrite-db/models/resumen.js" />
+        <option value="$PROJECT_DIR$/rewrite-db/models/articulo.js" />
+        <option value="$PROJECT_DIR$/rewrite-db/lib/articulo.js" />
+        <option value="$PROJECT_DIR$/rewrite-db/models/ensayo.js" />
+        <option value="$PROJECT_DIR$/rewrite-db/lib/ensayo.js" />
       </list>
     </option>
   </component>
@@ -310,11 +232,6 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/rewrite-api/node_modules" />
-    <handled-path value="$PROJECT_DIR$/rewrite-db/node_modules" />
-    <handled-path value="$PROJECT_DIR$/rewrite-web/node_modules" />
-  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/rewrite-api/package.json" />
@@ -322,18 +239,19 @@
       <path value="$PROJECT_DIR$/rewrite-web/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="110" />
-    <option name="y" value="-44" />
-    <option name="width" value="2800" />
-    <option name="height" value="1760" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -341,10 +259,67 @@
               <item name="ReWrite" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReWrite" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ReWrite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReWrite" type="462c0819:PsiDirectoryNode" />
+              <item name="rewrite-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReWrite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReWrite" type="462c0819:PsiDirectoryNode" />
+              <item name="rewrite-db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReWrite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReWrite" type="462c0819:PsiDirectoryNode" />
+              <item name="rewrite-db" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReWrite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReWrite" type="462c0819:PsiDirectoryNode" />
+              <item name="rewrite-db" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReWrite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReWrite" type="462c0819:PsiDirectoryNode" />
+              <item name="rewrite-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReWrite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReWrite" type="462c0819:PsiDirectoryNode" />
+              <item name="rewrite-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReWrite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReWrite" type="462c0819:PsiDirectoryNode" />
+              <item name="rewrite-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReWrite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReWrite" type="462c0819:PsiDirectoryNode" />
+              <item name="rewrite-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="ajustes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReWrite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReWrite" type="462c0819:PsiDirectoryNode" />
+              <item name="rewrite-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="crear" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -356,6 +331,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -386,33 +362,35 @@
       <option name="presentableId" value="Default" />
       <updated>1542073437771</updated>
       <workItem from="1542073444472" duration="9639000" />
+      <workItem from="1542114765282" duration="7346000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9639000" />
+    <option name="totallyTimeSpent" value="16985000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <layout>
-      <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2496617" />
+      <window_info anchor="bottom" id="TypeScript" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24930556" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="2" />
+      <window_info anchor="bottom" id="Run" order="6" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32972324" />
-      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" />
+      <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="REST Client" weight="0.39103362" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="5" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -422,87 +400,55 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/rewrite-db/lib/db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rewrite-db/lib/obra.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rewrite-db/lib/tipo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="43" column="20" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rewrite-db/lib/usuario.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rewrite-db/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rewrite-api/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
+        <state relative-caret-position="315">
           <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rewrite-api/server.js">
+    <entry file="file://$PROJECT_DIR$/rewrite-web/src/assets/img/fondo.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-api/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="36" column="88" selection-start-line="36" selection-start-column="88" selection-end-line="36" selection-end-column="88" />
+        <state relative-caret-position="135">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rewrite-db/setup.js">
+    <entry file="file://$PROJECT_DIR$/rewrite-web/e2e/src/app.e2e-spec.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-web/src/app/app.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
+        <state>
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rewrite-db/models/usuario.js">
+    <entry file="file://$PROJECT_DIR$/rewrite-web/src/app/app.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-web/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-web/src/app/ajustes/ajustes.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-web/src/app/ajustes/ajustes.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="22" />
+        <state relative-caret-position="-3">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rewrite-db/index.js">
+    <entry file="file://$PROJECT_DIR$/rewrite-api/api.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rewrite-db/models/estrofa.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rewrite-db/models/obra.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="9" selection-end-line="23" selection-end-column="1" />
+        <state relative-caret-position="225">
+          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -513,31 +459,280 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rewrite-db/lib/estrofa.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rewrite-api/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rewrite-api/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-828">
-          <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/rewrite-web/src/app/ensayo/ensayo.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-web/src/app/ensayo/ensayo.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-web/src/app/ensayo/ensayo.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-web/src/app/home/home.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-web/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-web/src/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-db/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="26" column="83" lean-forward="true" selection-start-line="26" selection-start-column="83" selection-end-line="26" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-api/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-api/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-db/lib/tipo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="636">
+          <caret line="43" column="12" lean-forward="true" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-db/lib/estrofa.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-db/models/dialogo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-db/models/obra.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-db/models/actos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-db/lib/narrativo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-db/models/narrativo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-db/lib/dialogo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-db/models/estrofa.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-db/models/lirico.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-db/lib/lirico.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-db/lib/usuario.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-db/lib/obra.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-web/src/app/crear/crear.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-db/lib/resumen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-db/models/articulo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="1" lean-forward="true" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-db/lib/personaje.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-db/lib/articulo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-db/models/dramatico.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-db/models/resumen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-db/models/personaje.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="36" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-db/models/ensayo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-web/src/app/init.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-web/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-web/src/app/material.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="163" selection-start-line="13" selection-start-column="163" selection-end-line="13" selection-end-column="163" />
+          <folding>
+            <element signature="e#0#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-web/src/app/ajustes/ajustes.component.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-web/src/app/ajustes/ajustes.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-db/lib/actos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="15" lean-forward="true" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-db/lib/db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-db/lib/dramatico.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite-db/lib/ensayo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
         </state>
       </provider>
     </entry>

@@ -6,10 +6,11 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
+import {MatBadgeModule} from '@angular/material/badge';
 
 
 @NgModule({
-  imports: [MatButtonModule, MatCheckboxModule, MatMenuModule, MatCardModule, MatExpansionModule, MatInputModule, MatFormFieldModule, MatIconModule],
-  exports: [MatButtonModule, MatCheckboxModule, MatMenuModule, MatCardModule, MatExpansionModule, MatInputModule, MatFormFieldModule, MatIconModule],
+  imports: [MatButtonModule, MatCheckboxModule, MatMenuModule, MatCardModule, MatExpansionModule, MatInputModule, MatFormFieldModule, MatIconModule, MatBadgeModule],
+  exports: [MatButtonModule, MatCheckboxModule, MatMenuModule, MatCardModule, MatExpansionModule, MatInputModule, MatFormFieldModule, MatIconModule, MatBadgeModule],
 })
 export class MaterialModule { }
