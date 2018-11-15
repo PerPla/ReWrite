@@ -79,3 +79,9 @@ button{
 
   background-color: deepskyblue;
 }
+#main-home{
+  color: white;
+  display:block;
+  margin:auto;
+  text-align: center;
+}

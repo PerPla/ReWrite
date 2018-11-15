@@ -16,7 +16,7 @@
           Cambia tu usuario y nombre:
         </mat-panel-description>
       </mat-expansion-panel-header>
-      <form class="example-form">
+      <form class="example-form" (ngSubmit)="MiFuncion()")>
         <mat-form-field hintLabel="Max 10 characters">
           <input matInput #input maxlength="10" placeholder="Ingrese su nuevo usuario">
           <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint>
