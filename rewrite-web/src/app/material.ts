@@ -10,7 +10,13 @@ import {MatBadgeModule} from '@angular/material/badge';
 
 
 @NgModule({
+<<<<<<< HEAD
   imports: [MatButtonModule, MatCheckboxModule, MatMenuModule, MatCardModule, MatExpansionModule, MatInputModule, MatFormFieldModule, MatIconModule, MatBadgeModule],
   exports: [MatButtonModule, MatCheckboxModule, MatMenuModule, MatCardModule, MatExpansionModule, MatInputModule, MatFormFieldModule, MatIconModule, MatBadgeModule],
+=======
+  imports: [MatButtonModule, MatCheckboxModule, MatMenuModule, MatCardModule, MatExpansionModule,
+    MatInputModule, MatFormFieldModule, MatIconModule],
+  exports: [MatButtonModule, MatCheckboxModule, MatMenuModule, MatCardModule, MatExpansionModule, MatInputModule, MatFormFieldModule, MatIconModule],
+>>>>>>> ac72c0e7d43270caa8dd58af592b50dfdbfc2d02
 })
 export class MaterialModule { }
