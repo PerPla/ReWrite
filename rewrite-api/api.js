@@ -30,20 +30,6 @@ api.use('*', async (req, res, next) => {
     }
     next()
 })
-async function getTipos() {
-    let ola
-     await Estrofa.findAll().then(tipo => {
-        //debug(tipo[0].getTipos())
-        tipo[0].getTipos().then(tipos => {
-            ola = tipos
-            return  ola
-        }, err => {
-            console.log('error2', err)
-        })
-    }, err => {
-         console.log('error1', err)
-     })
-}
 
 api.get('/ola', async(req, res, next) => {
     let nose = []
