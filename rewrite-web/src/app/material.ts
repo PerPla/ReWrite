@@ -9,7 +9,8 @@ import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
-  imports: [MatButtonModule, MatCheckboxModule, MatMenuModule, MatCardModule, MatExpansionModule, MatInputModule, MatFormFieldModule, MatIconModule],
+  imports: [MatButtonModule, MatCheckboxModule, MatMenuModule, MatCardModule, MatExpansionModule,
+    MatInputModule, MatFormFieldModule, MatIconModule],
   exports: [MatButtonModule, MatCheckboxModule, MatMenuModule, MatCardModule, MatExpansionModule, MatInputModule, MatFormFieldModule, MatIconModule],
 })
 export class MaterialModule { }
