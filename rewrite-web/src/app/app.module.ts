@@ -25,6 +25,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 // Material
 import { MaterialModule} from './material';
 import {HttpClientModule} from "@angular/common/http";
+<<<<<<< HEAD
 import {ArticuloService} from "./services/articulo.service";
 import {EnsayoService} from "./services/ensayo.service";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
@@ -35,6 +36,10 @@ import { CovalentLayoutModule } from '@covalent/core/layout';
 import { CovalentStepsModule  } from '@covalent/core/steps';
 import {CovalentFileModule} from "@covalent/core";
 import {UsuarioService} from "./services/usuario.service";
+=======
+import {HttpModule} from "@angular/http";
+import { TablaScoreComponent } from './tabla-score/tabla-score.component';
+>>>>>>> 4d5bb587b05eab57320cd7805426b42957c4686f
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -72,7 +77,8 @@ const appRoutes: Routes = [
     MisObrasComponent,
     LienzoComponent,
     MenuComponent,
-    InitComponent
+    InitComponent,
+    TablaScoreComponent
   ],
   imports: [
     BrowserModule,
