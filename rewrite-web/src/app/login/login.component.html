@@ -1,3 +1,12 @@
-<p>
-  login works!
-</p>
+<br><br>
+<mat-card id="main-card">
+  <h1>Login</h1>
+  <mat-form-field hintLabel="Max 10 characters">
+    <input matInput #input maxlength="10" placeholder="Ingrese su nuevo usuario">
+    <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint>
+  </mat-form-field>
+  <input matInput placeholder="Ingresa tu nueva contraseña" [type]="hide ? 'password' : 'text'">
+  <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+  <button mat-raised-button id="main-button">Iniciar Sesion</button>
+</mat-card>
+

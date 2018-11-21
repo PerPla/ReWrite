@@ -1,3 +1,41 @@
-<p>
-  registro works!
-</p>
+<br><br>
+<mat-card id="main-card">
+  <h1>Registro</h1>
+  <br><br>
+  <mat-form-field hintLabel="Max 10 characters">
+    <input matInput #input maxlength="10" placeholder="Ingrese su nuevo usuario">
+    <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint>
+  </mat-form-field><br><br>
+  <br><br> <input matInput placeholder="Ingresa tu nueva contraseña" [type]="hide ? 'password' : 'text'">
+  <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon><br><br>
+  <br><br><input matInput placeholder="Confirma tu contraseña" [type]="hide ? 'password' : 'text'">
+  <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon><br><br>
+  <input name="uploadedfile" type="file" />
+  <div id="file-preview-zone">
+    <br><br><button mat-raised-button id="main-button">Registrarse</button>
+    <script>
+      function readFile(input) {
+        if (input.files && input.files[0]) {
+          var reader = new FileReader();
+
+          reader.onload = function (e) {
+            var filePreview = document.createElement('img');
+            filePreview.id = 'file-preview';
+            //e.target.result contents the base64 data from the image uploaded
+            filePreview.src = e.target.result;
+            console.log(e.target.result);
+
+            var previewZone = document.getElementById('file-preview-zone');
+            previewZone.appendChild(filePreview);
+          }
+
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+
+      var fileUpload = document.getElementById('file-upload');
+      fileUpload.onchange = function (e) {
+        readFile(e.srcElement);
+      }
+    </script>
+</mat-card>
