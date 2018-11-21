@@ -12,15 +12,19 @@ module.exports = function setupModelEnsayo(config) {
             primaryKey: true,
             autoIncrement: true
         },
-        intro: {
+        introduccion: {
             type: Sequelize.STRING,
             allowNull: false
         },
-        desarollo: {
+        desarrollo: {
             type: Sequelize.STRING,
             allowNull: false
         },
         conclusion: {
+            type: Sequelize.STRING,
+            allowNull: false
+        },
+        referencia: {
             type: Sequelize.STRING,
             allowNull: false
         }

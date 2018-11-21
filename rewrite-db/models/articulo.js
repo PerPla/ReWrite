@@ -39,6 +39,10 @@ module.exports = function setupModelArticulo(config) {
         conclusiones: {
             type: Sequelize.STRING,
             allowNull: false
+        },
+        referencia: {
+            type: Sequelize.STRING,
+            allowNull: false
         }
 
     })

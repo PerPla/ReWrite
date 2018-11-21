@@ -12,7 +12,7 @@ const api = asyncify(express.Router())
 api.use(bodyParser.urlencoded({extended: true}))
 api.use(bodyParser.json())
 
-let services, Estrofa, Obra, Tipo, Usuario
+let services, Ensayo, Estrofa, Obra, Tipo, Usuario
 
 api.use('*', async (req, res, next) => {
     if(!services) {
@@ -22,6 +22,7 @@ api.use('*', async (req, res, next) => {
         } catch (e) {
             return next(e)
         }
+        Ensayo = services.Ensayo,
         Estrofa = services.Estrofa
         Obra = services.Obra
         Tipo = services.Tipo
@@ -47,6 +48,30 @@ api.get('/ola', async(req, res, next) => {
     res.send(estrofasDeTipos)
 })
 
+api.get('/ensayos', async(req, res, next) => {
+    debug('A request has come to /ensayos GET')
+    let ensayos = []
+    try {
+        ensayos = await Ensayo.findAll()
+    } catch(e) {
+        return next(e)
+    }
+    res.send(ensayos)
+})
+
+api.post('/ensayos', async(req, res, next) => {
+    debug('A request has come to /ensayos POST')
+    let ensayoReq = req.body
+    let ensayo
+    let obra
+    debug(req.body)
+    try {
+        ensayo = await Ensayo.create(ensayoReq)
+    } catch (e) {
+        return next(e)
+    }
+    res.send(ensayo)
+})
 
 api.get('/usuarios', async(req, res, next) => {
     debug('A request has come to /users GET')

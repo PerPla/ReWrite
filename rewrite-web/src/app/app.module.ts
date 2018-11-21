@@ -25,7 +25,16 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 // Material
 import { MaterialModule} from './material';
 import {HttpClientModule} from "@angular/common/http";
-import {HttpModule} from "@angular/http";
+import {ArticuloService} from "./services/articulo.service";
+import {EnsayoService} from "./services/ensayo.service";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+
+//Covalent
+
+import { CovalentLayoutModule } from '@covalent/core/layout';
+import { CovalentStepsModule  } from '@covalent/core/steps';
+import {CovalentFileModule} from "@covalent/core";
+import {UsuarioService} from "./services/usuario.service";
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -70,10 +79,16 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
     MaterialModule,
-    HttpModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
+
+    //Covalent
+    CovalentLayoutModule,
+    CovalentStepsModule,
+    CovalentFileModule
   ],
-  providers: [],
+  providers: [ArticuloService, EnsayoService, UsuarioService],
   bootstrap: [InitComponent]
 })
 export class AppModule { }

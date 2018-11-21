@@ -11,7 +11,7 @@ const setupModeloLirico = require ('./models/lirico')
 const setupModeloNarrativo = require ('./models/narrativo')
 const setupModeloObra = require ('./models/obra')
 const setupModeloPersonaje = require ('./models/personaje')
-const setupModeloReferencias = require ('./models/referencias')
+//const setupModeloReferencias = require ('./models/referencias')
 const setupModeloResumen = require ('./models/resumen')
 const setupModeloTipo = require ('./models/cat_tipo')
 const setupModeloUsuario = require ('./models/usuario')
@@ -44,7 +44,7 @@ module.exports = async function (config) {
     const ModeloNarrativo = setupModeloNarrativo(config)
     const ModeloObra = setupModeloObra(config)
     const ModeloPersonaje = setupModeloPersonaje(config)
-    const ModeloReferencias = setupModeloReferencias(config)
+    //const ModeloReferencias = setupModeloReferencias(config)
     const ModeloResumen = setupModeloResumen(config)
     const ModeloTipo = setupModeloTipo(config)
     const ModeloUsuario = setupModeloUsuario(config)
@@ -52,13 +52,13 @@ module.exports = async function (config) {
     let constraint = true;
 
     //usuario-obras 1:n obras.idUsuario
-    ModeloUsuario.hasMany(ModeloObra,
+    await ModeloUsuario.hasMany(ModeloObra,
         {
             foreignKey: 'usuarioId',
             constraints: constraint
         })
 
-    ModeloObra.belongsTo(ModeloUsuario,
+    await ModeloObra.belongsTo(ModeloUsuario,
         {
             foreignKey: 'usuarioId',
             constraints: constraint,
@@ -66,13 +66,13 @@ module.exports = async function (config) {
         })
 
     //articulo.ts-obra 1:n
-    ModeloObra.hasMany(ModeloArticulo,
+    await ModeloObra.hasMany(ModeloArticulo,
         {
             foreignKey: 'obraId',
             constraints: constraint
         })
 
-    ModeloArticulo.belongsTo(ModeloObra,
+    await ModeloArticulo.belongsTo(ModeloObra,
         {
             foreignKey: 'obraId',
             constraints: constraint,
@@ -80,13 +80,13 @@ module.exports = async function (config) {
         })
 
     //ensayo-obra 1:n
-    ModeloObra.hasMany(ModeloEnsayo,
+    await ModeloObra.hasMany(ModeloEnsayo,
         {
             foreignKey: 'obraId',
             constraints: constraint
         })
 
-    ModeloEnsayo.belongsTo(ModeloObra,
+    await ModeloEnsayo.belongsTo(ModeloObra,
         {
             foreignKey: 'obraId',
             constraints: constraint,
@@ -94,13 +94,13 @@ module.exports = async function (config) {
         })
 
     //resumen-obra 1:n
-    ModeloObra.hasMany(ModeloResumen,
+    await ModeloObra.hasMany(ModeloResumen,
         {
             foreignKey: 'obraId',
             constraints: constraint
         })
 
-    ModeloResumen.belongsTo(ModeloObra,
+    await ModeloResumen.belongsTo(ModeloObra,
         {
             foreignKey: 'obraId',
             constraints: constraint,
@@ -108,13 +108,13 @@ module.exports = async function (config) {
         })
 
     //dramatico-obra 1:n
-    ModeloObra.hasMany(ModeloDramatico,
+    await ModeloObra.hasMany(ModeloDramatico,
         {
             foreignKey: 'obraId',
             constraints: constraint
         })
 
-    ModeloDramatico.belongsTo(ModeloObra,
+    await ModeloDramatico.belongsTo(ModeloObra,
         {
             foreignKey: 'obraId',
             constraints: constraint,
@@ -122,13 +122,13 @@ module.exports = async function (config) {
         })
 
     //obra-narrativo 1:n
-    ModeloObra.hasMany(ModeloNarrativo,
+    await ModeloObra.hasMany(ModeloNarrativo,
         {
             foreignKey: 'obraId',
             constraints: constraint
         })
 
-    ModeloNarrativo.belongsTo(ModeloObra,
+    await ModeloNarrativo.belongsTo(ModeloObra,
         {
             foreignKey: 'obraId',
             constraints: constraint,
@@ -136,13 +136,13 @@ module.exports = async function (config) {
         })
 
     //narrativo-personajes 1:m
-    ModeloNarrativo.hasMany(ModeloPersonaje,
+    await ModeloNarrativo.hasMany(ModeloPersonaje,
         {
             foreignKey: 'narrativoId',
             constraints: constraint
         })
 
-    ModeloPersonaje.belongsTo(ModeloNarrativo,
+    await ModeloPersonaje.belongsTo(ModeloNarrativo,
         {
             foreignKey: 'narrativoId',
             constraints: constraint,
@@ -150,13 +150,13 @@ module.exports = async function (config) {
         })
 
     //dialogo-personaje 1:n
-    ModeloDialogo.hasMany(ModeloPersonaje,
+    await ModeloDialogo.hasMany(ModeloPersonaje,
         {
             foreignKey: 'dialogoId',
             constraints: constraint
         })
 
-    ModeloPersonaje.belongsTo(ModeloDialogo,
+    await ModeloPersonaje.belongsTo(ModeloDialogo,
         {
             foreignKey: 'dialogoId',
             constraints: constraint,
@@ -164,13 +164,13 @@ module.exports = async function (config) {
         })
 
     //dramatico-pesonaje 1:n personaje.idDramatico
-    ModeloDramatico.hasMany(ModeloPersonaje,
+    await ModeloDramatico.hasMany(ModeloPersonaje,
         {
             foreignKey: 'dramaticoId',
             constraints: constraint
         })
 
-    ModeloPersonaje.belongsTo(ModeloDramatico,
+    await ModeloPersonaje.belongsTo(ModeloDramatico,
         {
             foreignKey: 'dramaticoId',
             constraints: constraint,
@@ -178,13 +178,13 @@ module.exports = async function (config) {
         })
 
     //lirico-estrofa 1:n estrofa.idLirico
-    ModeloLirico.hasMany(ModeloEstrofa,
+    await ModeloLirico.hasMany(ModeloEstrofa,
         {
             foreignKey: 'liricoId',
             constraints: constraint
         })
 
-    ModeloEstrofa.belongsTo(ModeloLirico,
+    await ModeloEstrofa.belongsTo(ModeloLirico,
         {
             foreignKey: 'liricoId',
             constraints: constraint,
@@ -192,13 +192,13 @@ module.exports = async function (config) {
         })
 
     //dramatico-actos 1:n actos.idDramatico
-    ModeloDramatico.hasMany(ModeloActos,
+    await ModeloDramatico.hasMany(ModeloActos,
         {
             foreignKey: 'dramaticoId',
             constraints: constraint
         })
 
-    ModeloActos.belongsTo(ModeloDramatico,
+    await ModeloActos.belongsTo(ModeloDramatico,
         {
             foreignKey: 'dramaticoId',
             constraints: constraint,
@@ -206,80 +206,62 @@ module.exports = async function (config) {
         })
 
     //resumen-refrencias 1:n referencias.idResumen
-    ModeloResumen.hasMany(ModeloReferencias,
+    /*ModeloReferencias.hasMany(ModeloResumen,
         {
-            foreignKey: 'resumenId',
+            foreignKey: 'referenciaId',
             constraints: constraint
         })
 
-    ModeloReferencias.belongsTo(ModeloResumen,
+    ModeloResumen.belongsTo(ModeloReferencias,
         {
-            foreignKey: 'resumenId',
+            foreignKey: 'referenciaId',
             constraints: constraint,
-            as: 'resumen'
+            as: 'referencia'
         })
 
     //ensayo-referencias 1:n referencias.idEnsayo
-    ModeloEnsayo.hasMany(ModeloReferencias,
+    ModeloReferencias.hasMany(ModeloEnsayo,
         {
-            foreignKey: 'ensayoId',
+            foreignKey: 'referenciaId',
             constraints: constraint
         })
 
-    ModeloReferencias.belongsTo(ModeloEnsayo,
+    ModeloEnsayo.belongsTo(ModeloReferencias,
         {
-            foreignKey: 'ensayoId',
+            foreignKey: 'referenciaId',
             constraints: constraint,
-            as: 'ensayo'
+            as: 'referencia'
         })
 
     //articulo.ts-referencias 1:n referencias.idArticulo
-    ModeloArticulo.hasMany(ModeloReferencias,
+    ModeloReferencias.hasMany(ModeloArticulo,
         {
-            foreignKey: 'articuloId',
+            foreignKey: 'referenciaId',
             constraints: constraint
         })
 
-    ModeloReferencias.belongsTo(ModeloArticulo,
+    ModeloArticulo.belongsTo(ModeloReferencias,
         {
-            foreignKey: 'articuloId',
+            foreignKey: 'referenciaId',
             constraints: constraint,
-            as: 'articulo'
+            as: 'referencia'
         })
+        */
 
     //estrofa-tipos 1:n estrofa.idTipo
     //---estrofa-cat-tipo 1:1 estrofa.idTipo()
-    ModeloTipo.hasMany(ModeloEstrofa,
+    await ModeloTipo.hasMany(ModeloEstrofa,
         {
             foreignKey: 'tipoId',
             constraints: constraint
         })
 
-    ModeloEstrofa.belongsTo(ModeloTipo,
+    await ModeloEstrofa.belongsTo(ModeloTipo,
         {
             foreignKey: 'tipoId',
             constraints: constraint,
             as: 'tipo'
         })
-        
-
-
-    ModeloUsuario.bulkCreate([
-        {usuario: 'Angelito', contrasena: 'angelito123', avatar: 'pornhub.com'},
-        {usuario: 'Cabezon', contrasena: 'megustanlosmemes', avatar: 'xvideos.com'}
-    ])
-
-    ModeloEstrofa.bulkCreate([
-        {versos: 'VERSOS1', tipoId: 1},
-        {versos: 'VERSOS2', tipoId: 1},
-        {versos: 'VERSOS3', tipoId: 2}
-    ])
-
-    ModeloTipo.bulkCreate([
-        {nombre: 'Nombre1', numeroVersos: 1, rima: 1},
-        {nombre: 'Nombre2', numeroVersos: 2, rima: 2},
-        {nombre: 'Nombre3', numeroVersos: 3, rima: 3}
-    ])
 
     await sequelize.authenticate()
 
@@ -291,16 +273,45 @@ module.exports = async function (config) {
     const Articulo = setupArticulo(ModeloArticulo)
     const Dialogo = setupDialogo(ModeloDialogo)
     const Dramatico = setupDramatico(ModeloDramatico)
-    const Ensayo = setupEnsayo(ModeloEnsayo)
+    const Ensayo = setupEnsayo(ModeloEnsayo, ModeloObra, ModeloUsuario)
     const Estrofa = setupEstrofa(ModeloEstrofa, ModeloTipo)
     const Lirico = setupLirico(ModeloLirico)
     const Narrativo = setupNarrativo(ModeloNarrativo)
-    const Obra = setupObra(ModeloObra)
+    const Obra = setupObra(ModeloObra, ModeloUsuario)
     const Personaje = setupPersonaje(ModeloPersonaje)
-    const Referencias = setupReferencias(ModeloReferencias)
+    //const Referencias = setupReferencias(ModeloReferencias)
     const Resumen = setupResumen(ModeloResumen)
     const Tipo = setupTipo(ModeloTipo)
     const Usuario = setupUsuario(ModeloUsuario)
+
+    await ModeloUsuario.bulkCreate([
+        {usuario: 'Angelito', contrasena: 'angelito123', avatar: 'pornhub.com'},
+        {usuario: 'Cabezon', contrasena: 'megustanlosmemes', avatar: 'xvideos.com'}
+    ])
+
+    await ModeloObra.bulkCreate([
+        {titulo: 'TITULO1', numero_errores: 0, usuarioId:1},
+        {titulo: 'TITULO2', numero_errores: 0, usuarioId:1},
+        {titulo: 'TITULO3', numero_errores: 0, usuarioId:2},
+    ])
+
+    await ModeloEnsayo.bulkCreate([
+        {introduccion: 'INTRODUCCION1', desarrollo: 'DESARROLLO1', conclusion: 'CONCLUSION1', referencia: 'REFERENCIA1', obraId:1},
+        {introduccion: 'INTRODUCCION1', desarrollo: 'DESARROLLO2', conclusion: 'CONCLUSION1', referencia: 'REFERENCIA1', obraId:1},
+        {introduccion: 'INTRODUCCION1', desarrollo: 'DESARROLLO3', conclusion: 'CONCLUSION1', referencia: 'REFERENCIA1', obraId:2},
+    ])
+
+    await ModeloTipo.bulkCreate([
+        {nombre: 'Nombre1', numeroVersos: 1, rima: 1},
+        {nombre: 'Nombre2', numeroVersos: 2, rima: 2},
+        {nombre: 'Nombre3', numeroVersos: 3, rima: 3}
+    ])
+
+    await ModeloEstrofa.bulkCreate([
+        {versos: 'VERSOS1', tipoId: 1},
+        {versos: 'VERSOS2', tipoId: 1},
+        {versos: 'VERSOS3', tipoId: 2}
+    ])
 
     return {
         Actos,
@@ -313,7 +324,7 @@ module.exports = async function (config) {
         Narrativo,
         Obra,
         Personaje,
-        Referencias,
+        //Referencias,
         Resumen,
         Tipo,
         Usuario

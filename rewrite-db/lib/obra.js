@@ -1,6 +1,6 @@
 'use strict'
 
-module.exports = function setupObra(ModeloObra) {
+module.exports = function setupObra(ModeloObra, ModeloUsuario) {
 
     async function createOrUpdate (obra) {
         const cond = {
@@ -22,7 +22,12 @@ module.exports = function setupObra(ModeloObra) {
     }
 
     function findAll () {
-        return ModeloObra.findAll()
+        return ModeloObra.findAll({
+            include: [{
+                model: ModeloUsuario,
+                as: 'usuario'
+            }]
+        })
     }
 
     function findById (id) {

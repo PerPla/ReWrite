@@ -1,20 +1,18 @@
 import { Injectable } from '@angular/core';
-import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import { Articulo } from '../models/articulo';
 import { map } from 'rxjs/operators';
+import {HttpClient, HttpHeaders} from "@angular/common/http";
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class ArticuloService {
 
-  constructor(private http: Http) {}
+  constructor(private http: HttpClient) {}
   private url = 'http://localhost:3000/api/usuarios';
 
   getArticulos() {
-    let headers = new Headers({ 'Content-Type': 'application/json'});
+    let headers = new HttpHeaders({ 'Content-Type': 'application/json'});
     return this.http.get(this.url, {headers: headers})
-      .pipe(map((res: Response) => res.json()))
+      .pipe(map((res: Response) => res));
   }
 
   addArticulo() {

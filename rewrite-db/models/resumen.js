@@ -19,6 +19,10 @@ module.exports = function setupModelResumen(config) {
         claves: {
             type: Sequelize.STRING,
             allowNull: false
+        },
+        referencia: {
+            type: Sequelize.STRING,
+            allowNull: false
         }
 
     })
