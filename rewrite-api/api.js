@@ -4,7 +4,6 @@ const debug = require('debug')('rewrite:api:routes')
 const express = require('express')
 const asyncify = require('express-asyncify')
 const bodyParser = require('body-parser')
-
 const db = require('rewrite-db')
 const config = require('./config')
 
