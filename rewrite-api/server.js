@@ -5,6 +5,7 @@ const http = require('http')
 const chalk = require('chalk')
 const express = require('express')
 const asyncify = require('express-asyncify')
+const cors = require('cors')
 
 const api = require('./api')
 const port = process.env.PORT || 3000
@@ -12,6 +13,7 @@ const app = asyncify(express())
 const server = http.createServer(app)
 
 app.use('/api', api)
+app.use(cors())
 
 //Error Hanlder
 app.use((err, req, res, next) => {

@@ -65,7 +65,7 @@ module.exports = async function (config) {
             as: 'usuario'
         })
 
-    //articulo-obra 1:n
+    //articulo.ts-obra 1:n
     ModeloObra.hasMany(ModeloArticulo,
         {
             foreignKey: 'obraId',
@@ -233,7 +233,7 @@ module.exports = async function (config) {
             as: 'ensayo'
         })
 
-    //articulo-referencias 1:n referencias.idArticulo
+    //articulo.ts-referencias 1:n referencias.idArticulo
     ModeloArticulo.hasMany(ModeloReferencias,
         {
             foreignKey: 'articuloId',
@@ -249,8 +249,19 @@ module.exports = async function (config) {
 
     //estrofa-tipos 1:n estrofa.idTipo
     //---estrofa-cat-tipo 1:1 estrofa.idTipo()
-    ModeloEstrofa.belongsTo(ModeloTipo)
+    ModeloTipo.hasMany(ModeloEstrofa,
+        {
+            foreignKey: 'tipoId',
+            constraints: constraint
+        })
 
+    ModeloEstrofa.belongsTo(ModeloTipo,
+        {
+            foreignKey: 'tipoId',
+            constraints: constraint,
+            as: 'tipo'
+        })
+        
 
 
     ModeloUsuario.bulkCreate([
@@ -259,9 +270,9 @@ module.exports = async function (config) {
     ])
 
     ModeloEstrofa.bulkCreate([
-        {versos: 'VERSOS1'},
-        {versos: 'VERSOS2'},
-        {versos: 'VERSOS3'}
+        {versos: 'VERSOS1', tipoId: 1},
+        {versos: 'VERSOS2', tipoId: 1},
+        {versos: 'VERSOS3', tipoId: 2}
     ])
 
     ModeloTipo.bulkCreate([
@@ -281,7 +292,7 @@ module.exports = async function (config) {
     const Dialogo = setupDialogo(ModeloDialogo)
     const Dramatico = setupDramatico(ModeloDramatico)
     const Ensayo = setupEnsayo(ModeloEnsayo)
-    const Estrofa = setupEstrofa(ModeloEstrofa)
+    const Estrofa = setupEstrofa(ModeloEstrofa, ModeloTipo)
     const Lirico = setupLirico(ModeloLirico)
     const Narrativo = setupNarrativo(ModeloNarrativo)
     const Obra = setupObra(ModeloObra)

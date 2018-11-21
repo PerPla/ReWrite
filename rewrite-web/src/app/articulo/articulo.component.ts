@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ArticuloService } from '../services/articulo.service'
 @Component({
   selector: 'app-articulo',
   templateUrl: './articulo.component.html',
@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArticuloComponent implements OnInit {
 
-  constructor() { }
+  constructor(articuloService: ArticuloService) {
+  }
 
   ngOnInit() {
   }

@@ -1,14 +1,19 @@
 'use strict'
 
-module.exports = function setupEstrofa(ModeloEstrofa) {
+module.exports = function setupEstrofa(ModeloEstrofa, ModeloTipo) {
     let modelo = ModeloEstrofa
     async function create (estrofa) {
         const result = await ModeloObra.create(estrofa)
         return result.toJSON()
     }
 
-    function findAll () {
-        return ModeloEstrofa.findAll()
+    async function findAll () {
+        return ModeloEstrofa.findAll({
+            include: [{
+                model: ModeloTipo,
+                as: 'tipo'
+            }]
+        })
     }
 
     function findById (id) {

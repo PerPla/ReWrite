@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Usuario} from '../interfaces/usuario';
+import {ArticuloService} from "../services/articulo.service";
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,7 @@ import {Usuario} from '../interfaces/usuario';
 })
 export class HomeComponent implements OnInit {
 
-  constructor()
+  constructor(private articuloService: ArticuloService)
     {
       let myUser: Usuario = {
         nombre: 'Eduardo',
@@ -23,6 +24,12 @@ export class HomeComponent implements OnInit {
 
 
   ngOnInit() {
+    this.articuloService.getArticulos()
+      .subscribe(articulos => {
+        console.log(articulos)
+      }, err => {
+        console.error(err);
+      })
   }
 
 }

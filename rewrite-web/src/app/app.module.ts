@@ -24,6 +24,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 // Material
 import { MaterialModule} from './material';
+import {HttpClientModule} from "@angular/common/http";
+import {HttpModule} from "@angular/http";
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -68,6 +70,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
     MaterialModule,
+    HttpModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [InitComponent]

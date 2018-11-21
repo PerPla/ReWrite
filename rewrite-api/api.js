@@ -30,30 +30,21 @@ api.use('*', async (req, res, next) => {
     next()
 })
 
-//
+//PRIMERO USUARIOS O SI NO NO FUNCIONA AAAAAAAAAAAAAAAAA    
 
 api.get('/ola', async(req, res, next) => {
-    let nose = []
-
+    let tipos = []
+    let estrofasDeTipos = []
     try {
         debug('MEGUSTANLOSMEMEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEES')
-        await Estrofa.findAll().then(tipo => {
-            //debug(tipo[0].getTipos())
-            tipo[0].getTipos().then(tipos => {
-                nose = tipos
-                res.send(nose)
-                console.log(nose)
-            }, err => {
-                console.log('error2', err)
-            })
-        }, err => {
-            console.log('error1', err)
-        })
+        tipos = await Tipo.findAll()
+        estrofasDeTipos = await tipos[0].getEstrofas()
+        
 
     } catch (e) {
         return next(e)
     }
-
+    res.send(estrofasDeTipos)
 })
 
 
