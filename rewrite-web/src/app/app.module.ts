@@ -26,6 +26,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialModule} from './material';
 import {HttpClientModule} from "@angular/common/http";
 import {HttpModule} from "@angular/http";
+import { TablaScoreComponent } from './tabla-score/tabla-score.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -63,7 +64,8 @@ const appRoutes: Routes = [
     MisObrasComponent,
     LienzoComponent,
     MenuComponent,
-    InitComponent
+    InitComponent,
+    TablaScoreComponent
   ],
   imports: [
     BrowserModule,

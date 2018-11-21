@@ -88,3 +88,18 @@ button{
 #main-input{
  width: 70%;
 }
+#main-div{
+  width: 25%;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  display:block;
+  margin:auto;
+}
+#main-circulo {
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
