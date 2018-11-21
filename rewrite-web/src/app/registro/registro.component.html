@@ -20,7 +20,7 @@
     <br><br>
     <p>Select Event: {{fileSelectMsg}}</p>
     <p>Upload Event: {{fileUploadMsg}}</p>
-    <td-file-upload #singleFileUpload name="files" [(ngModel)]="files" (select)="selectEvent($event)" (upload)="uploadEvent($event)" (cancel)="cancelEvent()" [disabled]="disabled" required>
+    <td-file-upload (change)="aiuda($event)" #singleFileUpload name="files" [(ngModel)]="files" (select)="selectEvent($event)" (upload)="uploadEvent($event)" (cancel)="cancelEvent()" [disabled]="disabled" required>
       <mat-icon>file_upload</mat-icon><span>{{ singleFileUpload.value?.name }}</span>
       <ng-template td-file-input-label>
         <mat-icon>attach_file</mat-icon>
@@ -32,5 +32,17 @@
     </td-file-upload>
       <br><br><button mat-raised-button id="main-button">Registrarse</button>
   </form>
+  <image-cropper
+    [imageChangedEvent]="imageChangedEvent"
+    [maintainAspectRatio]="true"
+    [aspectRatio]="4 / 3"
+    [resizeToWidth]="128"
+    format="png"
+    (imageCropped)="imageCropped($event)"
+    (imageLoaded)="imageLoaded()"
+    (loadImageFailed)="loadImageFailed()"
+  ></image-cropper>
+
+  <img [src]="croppedImage" width="200px" height="200px" />
 </mat-card>
 

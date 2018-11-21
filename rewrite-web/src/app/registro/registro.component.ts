@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {UsuarioService} from "../services/usuario.service";
+import {ImageCroppedEvent} from "ngx-image-cropper/src/image-cropper.component";
 
 @Component({
   selector: 'app-registro',
@@ -17,19 +18,38 @@ export class RegistroComponent implements OnInit {
   fileUploadMsg: string = 'No se ha subido el archivo';
   disabled: boolean = false;
 
+  imageChangedEvent: any = '';
+  croppedImage: any = '';
+
+  imageCropped(event: ImageCroppedEvent) {
+    this.croppedImage = event.file;
+  }
+
+  imageLoaded() {
+    // show cropper
+  }
+  loadImageFailed() {
+    // show message
+  }
+
   submitRegistro() {
-    console.log(this.files);
-    this.formData.append("uploads[]", this.files, this.files.name);
+    console.log(this.croppedImage);
+    /*this.formData.append("uploads[]", this.files, this.files.name);
     this.usuarioService.addUsuario(this.formData)
       .subscribe(res => {
         console.log(res);
       }, err => {
         console.error(err);
-      })
+      })*/
+  }
+
+  aiuda(event) {
+    this.imageChangedEvent = event;
   }
 
   selectEvent(file: File): void {
     this.fileSelectMsg = file.name;
+    //this.imageChangedEvent = event;
   }
 
   uploadEvent(file: File): void {
