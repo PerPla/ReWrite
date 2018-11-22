@@ -6,16 +6,18 @@
   <br><br>
     <mat-icon>group</mat-icon>
     <br><br>
-  <mat-form-field hintLabel="Max 10 characters">
-    <input matInput #input maxlength="10" placeholder="Ingresa tu usuario">
-    <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint>
-  </mat-form-field>
-  <br><br>
-  <mat-form-field>
-    <input matInput placeholder="Ingresa contraseña" [type]="hide ? 'password' : 'text'">
-  </mat-form-field>
-  <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-  <button mat-raised-button id="main-button">Iniciar Sesion</button>
+    <form (ngSubmit)="login()">
+      <mat-form-field hintLabel="Max 10 characters">
+        <input name="usuario" [(ngModel)]="usuario.usuario" matInput #input maxlength="10" placeholder="Ingresa tu usuario">
+        <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint>
+      </mat-form-field>
+      <br><br>
+      <mat-form-field>
+        <input name="contrasena" [(ngModel)]="usuario.contrasena" matInput placeholder="Ingresa contraseña" [type]="hide ? 'password' : 'text'">
+      </mat-form-field>
+      <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      <button mat-raised-button id="main-button">Iniciar Sesion</button>
+    </form>
   <br><br>
   </div>
 </mat-card>

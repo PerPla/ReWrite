@@ -17,7 +17,6 @@ export class EnsayoService {
 
   addEnsayo(body: Object) {
     let headers = new HttpHeaders({ 'Content-Type': 'application/json'});
-    let bodyString = JSON.stringify(body);
     return this.http.post(this.url, body, {headers: headers})
       .pipe(map((res: Response) => res));
   }

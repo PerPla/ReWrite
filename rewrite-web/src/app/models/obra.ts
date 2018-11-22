@@ -4,5 +4,5 @@ export class Obra {
   id: number;
   titulo: string;
   numero_errores = 0;
-  usuario: Usuario = new Usuario();
+  usuario: any;
 }

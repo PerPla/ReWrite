@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {UsuarioService} from "../services/usuario.service";
 import {ImageCroppedEvent} from "ngx-image-cropper/src/image-cropper.component";
+import {Usuario} from "../models/usuario";
+import {AngularFireStorage} from "@angular/fire/storage";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-registro',
@@ -10,8 +13,11 @@ import {ImageCroppedEvent} from "ngx-image-cropper/src/image-cropper.component";
 export class RegistroComponent implements OnInit {
   files;
   formData: FormData;
-  constructor(private usuarioService: UsuarioService) {
+  picture: any;
+  usuario: Usuario;
+  constructor(private usuarioService: UsuarioService, private firebaseStorage: AngularFireStorage, private router:Router) {
     this.formData = new FormData();
+    this.usuario = new Usuario();
   }
 
   fileSelectMsg: string = 'No has seleccionado un archivo';
@@ -22,7 +28,7 @@ export class RegistroComponent implements OnInit {
   croppedImage: any = '';
 
   imageCropped(event: ImageCroppedEvent) {
-    this.croppedImage = event.file;
+    this.croppedImage = event.base64;
   }
 
   imageLoaded() {
@@ -34,13 +40,34 @@ export class RegistroComponent implements OnInit {
 
   submitRegistro() {
     console.log(this.croppedImage);
-    /*this.formData.append("uploads[]", this.files, this.files.name);
-    this.usuarioService.addUsuario(this.formData)
-      .subscribe(res => {
-        console.log(res);
+    this.submitPicture();
+  }
+
+  submitPicture() {
+    const currentPictureId = Date.now();
+    const pictures = this.firebaseStorage.ref('pictures/' + currentPictureId + '.jpg')
+      .putString(this.croppedImage, 'data_url');
+
+    pictures.then(response => {
+      this.picture = this.firebaseStorage.ref('pictures/' + currentPictureId + '.jpg')
+        .getDownloadURL();
+
+      this.picture.subscribe(picture => {
+        this.usuario.avatar = picture;
+
+        this.usuarioService.addUsuario(this.usuario)
+          .subscribe(res => {
+            console.log(res);
+            this.router.navigate(['/Login']);
+          }, err => {
+            console.error(err);
+          });
       }, err => {
         console.error(err);
-      })*/
+      });
+    }).catch(err => {
+      console.error(err);
+    });
   }
 
   aiuda(event) {

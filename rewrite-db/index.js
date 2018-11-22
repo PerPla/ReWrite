@@ -283,7 +283,7 @@ module.exports = async function (config) {
     const Resumen = setupResumen(ModeloResumen)
     const Tipo = setupTipo(ModeloTipo)
     const Usuario = setupUsuario(ModeloUsuario)
-
+/*
     await ModeloUsuario.bulkCreate([
         {usuario: 'Angelito', contrasena: 'angelito123', avatar: 'pornhub.com'},
         {usuario: 'Cabezon', contrasena: 'megustanlosmemes', avatar: 'xvideos.com'}
@@ -311,7 +311,7 @@ module.exports = async function (config) {
         {versos: 'VERSOS1', tipoId: 1},
         {versos: 'VERSOS2', tipoId: 1},
         {versos: 'VERSOS3', tipoId: 2}
-    ])
+    ])*/
 
     return {
         Actos,

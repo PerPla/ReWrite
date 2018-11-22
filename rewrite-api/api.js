@@ -6,6 +6,7 @@ const asyncify = require('express-asyncify')
 const bodyParser = require('body-parser')
 const db = require('rewrite-db')
 const config = require('./config')
+const auth = require('./auth')
 
 const api = asyncify(express.Router())
 
@@ -13,6 +14,12 @@ api.use(bodyParser.urlencoded({extended: true}))
 api.use(bodyParser.json())
 
 let services, Ensayo, Estrofa, Obra, Tipo, Usuario
+
+api.use( (req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*")
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
+    next()
+})
 
 api.use('*', async (req, res, next) => {
     if(!services) {
@@ -64,13 +71,92 @@ api.post('/ensayos', async(req, res, next) => {
     let ensayoReq = req.body
     let ensayo
     let obra
+    let usr
     debug(req.body)
     try {
-        ensayo = await Ensayo.create(ensayoReq)
+        debug('OLA', ensayoReq.obra.usuario)
+        Usuario.findById(req.body.obra.usuario.id).then(usr => {
+            debug('USUARIO', usr)
+            usr.createObra(req.body.obra).then(obra => {
+                debug('OBRA', obra)
+                debug('ENSAYO', req.body)
+                obra.createEnsayo(req.body).then(ens => {
+                    debug('ENSAYO', ens)
+                })
+            })
+        })
+
+        //ensayo = await Ensayo.create(ensayoReq)
+
     } catch (e) {
         return next(e)
     }
-    res.send(ensayo)
+    res.send(ensayoReq)
+})
+
+api.post('/articulos', async(req, res, next) => {
+    debug('A request has come to /articulos POST')
+    let articuloReq = req.body
+    //debug('ROOT', req.body)
+    try {
+        debug('OLA', articuloReq.obra.usuario)
+        Usuario.findById(req.body.obra.usuario.id).then(usr => {
+            debug('USUARIO', usr)
+            usr.createObra(req.body.obra).then(obra => {
+                debug('OBRA', obra)
+                debug('ARTICULO', req.body)
+                obra.createArticulo(req.body).then(art => {
+                    debug('ARTICULO', art)
+
+                })
+            })
+        })
+    } catch (e) {
+        return next(e)
+    }
+    res.send(articuloReq)
+})
+
+api.post('/resumenes', async(req, res, next) => {
+    debug('A request has come to /resumenes POST')
+    let resumenReq = req.body
+    //debug('ROOT', req.body)
+    try {
+        debug('OLA', resumenReq.obra.usuario)
+        Usuario.findById(req.body.obra.usuario.id).then(usr => {
+            debug('USUARIO', usr)
+            usr.createObra(req.body.obra).then(obra => {
+                debug('OBRA', obra)
+                debug('Resumen', req.body)
+                obra.createResumen(req.body).then(res => {
+                    debug('Resumen', res)
+
+                })
+            })
+        })
+    } catch (e) {
+        return next(e)
+    }
+    res.send(resumenReq)
+})
+
+api.post('/verify', async(req, res, next) => {
+    debug('A request has come to /verify')
+    let token = req.body
+    let result
+    try {
+        auth.verify(token.token, config.auth.secret, (err, token) => {
+            debug(token, err)
+            if(err) {
+                res.send( { status: false } )
+            }
+            res.send({ status: true })
+        })
+    } catch (e) {
+        return next(e)
+    }
+    //debug('RESULT', result)
+    res.send(result)
 })
 
 api.get('/usuarios', async(req, res, next) => {
@@ -86,15 +172,36 @@ api.get('/usuarios', async(req, res, next) => {
 })
 
 api.get('/usuarios/:id', async (req, res, next) => {
-    debug(`A request has come to /users/${req.params.id}`)
+    //debug(`A request has come to /users/${req.params.id}`)
     let id = req.params.id
     let usuario
     try {
         usuario = await Usuario.findById(id)
+       // debug('USUARIO', usuario)
     } catch (e) {
         return next(e)
     }
     res.send(usuario)
+})
+
+api.post('/usuarios/obras', async (req, res, next) => {
+    debug(`A request has come to /users/OBRAS`)
+    let id = req.body.id
+    debug(req.body)
+    debug('ID', req.body.id)
+    //let obras = []
+    try {
+        Usuario.findById(id).then(usr => {
+            usr.getObras().then(obras => {
+                //this.obras = obras
+                res.send(obras)
+            })
+        })
+        // debug('USUARIO', usuario)
+    } catch (e) {
+        return next(e)
+    }
+    //res.send(usuario)
 })
 
 api.post('/usuarios', async (req, res, next) => {

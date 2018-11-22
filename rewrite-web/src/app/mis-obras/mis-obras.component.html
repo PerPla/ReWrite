@@ -7,10 +7,9 @@
 <br><br>
 <mat-card id="main-card2">
 <h2 id="main-letter">Mis Obras</h2>
-<mat-card id="main-card3">
-  Primera Obra
-</mat-card>
-<mat-card id="main-card4">
-  Segunda Obra
-</mat-card>
+<ng-container *ngFor="let obra of obras">
+  <mat-card id="main-card3">
+    {{obra.titulo}}
+  </mat-card>
+</ng-container>
 </mat-card>

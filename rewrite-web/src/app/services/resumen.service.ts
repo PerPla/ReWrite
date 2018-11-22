@@ -4,19 +4,19 @@ import { map } from 'rxjs/operators';
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 
 @Injectable()
-export class ArticuloService {
+export class ResumenService {
 
   constructor(private http: HttpClient) {}
-  private url = 'http://localhost:3000/api/articulos';
+  private url = 'http://localhost:3000/api/resumenes';
 
-  getArticulos() {
+  getResumenes() {
     let headers = new HttpHeaders({ 'Content-Type': 'application/json'});
     return this.http.get(this.url, {headers: headers})
       .pipe(map((res: Response) => res));
   }
 
 
-  addArticulo(body: Object) {
+  addResumen(body: Object) {
     let headers = new HttpHeaders({ 'Content-Type': 'application/json'});
     return this.http.post(this.url, body, {headers: headers})
       .pipe(map((res: Response) => res));

@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import {ResumenService} from "../services/resumen.service";
+import {UsuarioService} from "../services/usuario.service";
+import {Router} from "@angular/router";
+import {Resumen} from "../models/resumen";
+
 
 @Component({
   selector: 'app-resumen',
@@ -7,7 +12,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResumenComponent implements OnInit {
 
-  constructor() { }
+  resumen: Resumen;
+  constructor(private resumenService: ResumenService, private usuarioService: UsuarioService, private router: Router) {
+    this.resumen = new Resumen();
+  }
+
+  submitResumen() {
+    console.log(this.resumen);
+    let id = parseInt(sessionStorage.getItem('id'));
+    this.usuarioService.getUsuarioById(id)
+      .subscribe(usr => {
+        this.resumen.obra.usuario = usr;
+        this.resumenService.addResumen(this.resumen)
+          .subscribe(res => {
+            console.log(res);
+            alert('Obra creada');
+            this.router.navigate(['/Home']);
+          }, err => {
+            console.error(err);
+          });
+      }, err => {
+        console.error(err);
+      });
+  }
 
   ngOnInit() {
   }

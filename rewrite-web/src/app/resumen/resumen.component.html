@@ -3,26 +3,28 @@
 <br><br>
 <mat-card id="main-card">
   <h1>Resumen</h1><br><br>
-  <mat-form-field id="main-input">
-    <textarea matInput placeholder="Titulo" ></textarea>
-    <mat-hint align="start"><strong>Ingresa un Titulo</strong> </mat-hint>
-  </mat-form-field>
-  <br><br><br><br>
-  <mat-form-field id="main-input">
-    <textarea matInput placeholder="Contenido" ></textarea>
-    <mat-hint align="start"><strong>Escribe tu contenido</strong> </mat-hint>
-  </mat-form-field>
-  <br><br><br><br>
-  <mat-form-field id="main-input">
-    <textarea matInput placeholder="Claves" ></textarea>
-    <mat-hint align="start"><strong>Escribe tu claves</strong> </mat-hint>
-  </mat-form-field>
-  <br><br><br><br>
-  <mat-form-field id="main-input">
-    <textarea matInput placeholder="Referencia" ></textarea>
-    <mat-hint align="start"><strong>Ingresa tus referencias</strong> </mat-hint>
-  </mat-form-field><br><br>
-  <button mat-raised-button id="main-button">Crear</button><br><br>
+  <form (ngSubmit)="submitResumen()">
+    <mat-form-field id="main-input">
+      <textarea name="titulo" [(ngModel)]="resumen.obra.titulo" matInput placeholder="Titulo" ></textarea>
+      <mat-hint align="start"><strong>Ingresa un Titulo</strong> </mat-hint>
+    </mat-form-field>
+    <br><br><br><br>
+    <mat-form-field id="main-input">
+      <textarea name="contenido" [(ngModel)]="resumen.contenido" matInput placeholder="Contenido" ></textarea>
+      <mat-hint align="start"><strong>Escribe tu contenido</strong> </mat-hint>
+    </mat-form-field>
+    <br><br><br><br>
+    <mat-form-field id="main-input">
+      <textarea name="claves" [(ngModel)]="resumen.claves" matInput placeholder="Claves" ></textarea>
+      <mat-hint align="start"><strong>Escribe tu claves</strong> </mat-hint>
+    </mat-form-field>
+    <br><br><br><br>
+    <mat-form-field id="main-input">
+      <textarea name="referencia" [(ngModel)]="resumen.referencia" matInput placeholder="Referencia" ></textarea>
+      <mat-hint align="start"><strong>Ingresa tus referencias</strong> </mat-hint>
+    </mat-form-field><br><br>
+    <button mat-raised-button id="main-button">Crear</button><br><br>
+  </form>
 </mat-card>
 
 <br><br>

@@ -38,23 +38,33 @@ import {CovalentFileModule} from "@covalent/core";
 
 //Image
 import { ImageCropperModule } from 'ngx-image-cropper';
+import {environment} from "../environments/environment";
+import {AngularFireModule} from "@angular/fire";
+import {AngularFireStorageModule, StorageBucket} from '@angular/fire/storage';
+import {AuthenticationService} from "./services/authentication.service";
+import {AuthenticationGuard} from "./services/authentication.guard";
+import {ResumenService} from "./services/resumen.service";
+
+
+//Firebase
+
 
 const appRoutes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'Home', component: HomeComponent},
+  {path: '', component: HomeComponent, canActivate: [AuthenticationGuard]},
+  {path: 'Home', component: HomeComponent, canActivate: [AuthenticationGuard]},
   {path: 'Login', component: LoginComponent},
   {path: 'Registro', component: RegistroComponent},
-  {path: 'Ajustes', component: AjustesComponent},
-  {path: 'Articulo' , component: ArticuloComponent},
-  {path: 'Crear', component: CrearComponent},
-  {path: 'Dramatico', component: DramaticoComponent},
-  {path: 'Ensayo', component: EnsayoComponent},
-  {path: 'Evolucion', component: EvolucionComponent},
-  {path: 'Lienzo', component: LienzoComponent},
-  {path: 'Lirico', component: LiricoComponent},
-  {path: 'MisObras', component: MisObrasComponent},
-  {path: 'Narrativo', component: NarrativoComponent},
-  {path: 'Resumen', component: ResumenComponent}
+  {path: 'Ajustes', component: AjustesComponent, canActivate: [AuthenticationGuard]},
+  {path: 'Articulo' , component: ArticuloComponent, canActivate: [AuthenticationGuard]},
+  {path: 'Crear', component: CrearComponent, canActivate: [AuthenticationGuard]},
+  {path: 'Dramatico', component: DramaticoComponent, canActivate: [AuthenticationGuard]},
+  {path: 'Ensayo', component: EnsayoComponent, canActivate: [AuthenticationGuard]},
+  {path: 'Evolucion', component: EvolucionComponent, canActivate: [AuthenticationGuard]},
+  {path: 'Lienzo', component: LienzoComponent, canActivate: [AuthenticationGuard]},
+  {path: 'Lirico', component: LiricoComponent, canActivate: [AuthenticationGuard]},
+  {path: 'MisObras', component: MisObrasComponent, canActivate: [AuthenticationGuard]},
+  {path: 'Narrativo', component: NarrativoComponent, canActivate: [AuthenticationGuard]},
+  {path: 'Resumen', component: ResumenComponent, canActivate: [AuthenticationGuard]}
 ];
 
 @NgModule({
@@ -91,9 +101,13 @@ const appRoutes: Routes = [
     CovalentStepsModule,
     CovalentFileModule,
     //Image
-    ImageCropperModule
+    ImageCropperModule,
+
+    //Firebase
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireStorageModule
   ],
-  providers: [ArticuloService, EnsayoService, UsuarioService],
+  providers: [ArticuloService, EnsayoService, ResumenService, UsuarioService, AuthenticationGuard, AuthenticationService, { provide: StorageBucket, useValue: 'rewrite-832fd.appspot.com' }],
   bootstrap: [InitComponent]
 })
 export class AppModule { }
