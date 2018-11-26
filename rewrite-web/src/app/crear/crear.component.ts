@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./crear.component.css']
 })
 export class CrearComponent implements OnInit {
-
+//I love Kevin
   constructor() { }
 
   ngOnInit() {
   }
-
+//odi
 }

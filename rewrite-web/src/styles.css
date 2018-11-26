@@ -103,3 +103,9 @@ button{
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
+#main-right{
+  text-align-all: right;
+  text-align: right;
+  align-items: right;
+  float: right;
+}

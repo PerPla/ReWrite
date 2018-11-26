@@ -6,11 +6,47 @@
 </mat-card>
 <br><br>
 <mat-card id="main-card2">
-  <h2 id="main-letter">Gráficas de errores</h2>
-  <mat-card id="main-card3">
-    Por plantilla:
-  </mat-card>
-  <mat-card id="main-card4">
-    Por mes:
-  </mat-card>
+  <h2 id="main-letter">Errores vs palabras</h2>
+    <div>
+      <div style="display: block">
+        <canvas baseChart
+                [datasets]="barChartData"
+                [labels]="barChartLabels"
+                [options]="barChartOptions"
+                [legend]="barChartLegend"
+                [chartType]="barChartType"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"></canvas>
+      </div>
+      <button (click)="randomize()">Update</button>
+    </div>
+  <br><br><br><br>
 </mat-card>
+<br><br><br>
+<mat-card id="main-card2">
+  <h2 id="main-letter">Gráficas de plantillas</h2>
+  <div style="display: block">
+    <canvas baseChart
+            [data]="doughnutChartData"
+            [labels]="doughnutChartLabels"
+            [chartType]="doughnutChartType"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"></canvas>
+  </div>
+  <br><br><br><br>
+</mat-card>
+<br><br><br>
+<mat-card id="main-card2">
+  <h2 id="main-letter">Gráficas de errores por plantillos</h2>
+  <div style="display: block">
+    <canvas baseChart
+            [data]="polarAreaChartData"
+            [labels]="polarAreaChartLabels"
+            [legend]="polarAreaLegend"
+            [chartType]="polarAreaChartType"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"></canvas>
+  </div>
+  <br><br><br><br>
+</mat-card>
+<br><br><br>

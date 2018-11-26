@@ -11,5 +11,5 @@ export class AjustesComponent implements OnInit {
 
   ngOnInit() {
   }
-
+//Hola bdbkfabfkabkjfdb
 }

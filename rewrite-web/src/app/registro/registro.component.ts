@@ -4,7 +4,8 @@ import {ImageCroppedEvent} from "ngx-image-cropper/src/image-cropper.component";
 import {Usuario} from "../models/usuario";
 import {AngularFireStorage} from "@angular/fire/storage";
 import {Router} from "@angular/router";
-
+//Adriana esta junto a mi
+//David esta a lado de Frida
 @Component({
   selector: 'app-registro',
   templateUrl: './registro.component.html',

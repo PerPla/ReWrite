@@ -30,6 +30,7 @@ import {ArticuloService} from "./services/articulo.service";
 import {EnsayoService} from "./services/ensayo.service";
 import {UsuarioService} from "./services/usuario.service";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { ChartsModule } from 'ng2-charts';
 
 //Covalent
 import { CovalentLayoutModule } from '@covalent/core/layout';
@@ -102,7 +103,8 @@ const appRoutes: Routes = [
     CovalentFileModule,
     //Image
     ImageCropperModule,
-
+    //Graphics
+    ChartsModule,
     //Firebase
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireStorageModule

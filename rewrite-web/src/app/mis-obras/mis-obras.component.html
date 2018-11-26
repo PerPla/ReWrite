@@ -9,7 +9,12 @@
 <h2 id="main-letter">Mis Obras</h2>
 <ng-container *ngFor="let obra of obras">
   <mat-card id="main-card3">
-    {{obra.titulo}}
+    {{obra.titulo}}<mat-icon id="main-right" onclick="pdf.create">
+    description
+  </mat-icon>
+    <img routerLink="/Resumen" src="../../assets/img/plantilla.png"/>
   </mat-card>
+  &nbsp;&nbsp;
 </ng-container>
+  <br><br><br><br><br><br><br>  <br><br><br><br><br><br><br>  <br><br><br><br><br><br><br>
 </mat-card>
